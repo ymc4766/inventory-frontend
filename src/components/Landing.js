@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <header className="bg-white shadow">
-        <div className="max-w-7xl mx-auto py-6 px-6 sm:px-6 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto py-3 px-6 sm:px-6 flex items-center justify-between">
           <h1 className="text-3xl font-bold text-gray-800">
             Inventory Management Sys
           </h1>
