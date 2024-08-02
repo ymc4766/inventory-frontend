@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const RegisterScreen = () => {
+  const [email, setEmail] = useState("");
   const [name, setName] = useState("");
 
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
+
     console.log("name", name);
     console.log("email", email);
     console.log("password", password);
@@ -29,13 +30,13 @@ const RegisterScreen = () => {
         className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md "
         onSubmit={submitHandler}
       >
-        <h1 className="text-center text-2xl font-bold">Register </h1>
+        <h1 className="text-center text-2xl font-bold">Register</h1>
         <div className="mb-4">
           <label
             htmlFor="name"
-            className="block text-gray-500 text-sm font-bold"
+            className="block text-gray-800 text-sm font-bold"
           >
-            Name
+            Email
           </label>
           <input
             value={name}
@@ -67,6 +68,7 @@ const RegisterScreen = () => {
             password
           </label>
           <input
+            type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="enter your password  "
